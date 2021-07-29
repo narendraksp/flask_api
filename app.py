@@ -10,6 +10,7 @@ app.config['PROPAGATE_EXCEPTIONS'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']= False
 # # To allow flask propagating exception even if debug is set to false on app
 app.secret_key = 'jose'
+
 api = Api(app)
 
 # jwt = JWT(app, authenticate, identity)
